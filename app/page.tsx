@@ -1,14 +1,15 @@
-import Image from "next/image";
 import NavBar from "./components/NavBar";
-import HomePage from "./components/HomePage";
+import HomeCard from "./components/HomeCard";
+import AboutCard from "./components/AboutCard";
 
 export default function Home() {
   return (
-    <div className="w-[100%] h-[100vh] bg-[#D7D7D7]">
+    <div className="w-[100%] h-fit bg-[#D7D7D7]">
       {" "}
       {/* //#DFDFDF */}
       <NavBar />
-      <HomePage />
+      <HomeCard />
+      <AboutCard />
     </div>
   );
 }
