@@ -2,7 +2,10 @@ import React from "react";
 
 const AboutCard = () => {
   return (
-    <div className="h-[80vh] w-[100%] p-[8rem] flex justify-between" id="about">
+    <div
+      className="h-[80vh] w-[100%] px-[8rem] py-[3rem] flex justify-between"
+      id="about"
+    >
       <div className="w-[40%] h-[100%] flex justify-center items-center">
         <p className="w-[20rem] h-[20rem] rounded-[50%] bg-slate-600"></p>
       </div>

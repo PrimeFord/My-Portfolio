@@ -19,8 +19,8 @@ export const navData: NavData[] = [
   },
   {
     id: 3,
-    name: "Portfolio",
-    route: "#portfolio",
+    name: "Projects",
+    route: "#projects",
   },
   {
     id: 4,
@@ -95,6 +95,16 @@ export const learningData: UsingData[] = [
     title: "TypeScript",
     alt: "TypeScript",
   },
+  {
+    src: "./images/vue.svg",
+    title: "Vue JS",
+    alt: "Vue",
+  },
+  {
+    src: "./images/figma.svg",
+    title: "Figma",
+    alt: "Figma",
+  },
   // {
   //   src: "./images/python.svg",
   //   title: "Python",
@@ -105,4 +115,77 @@ export const learningData: UsingData[] = [
   //   title: "Sass",
   //   alt: "Sass",
   // },
+];
+
+interface ProjectData {
+  id: number;
+  title: string;
+  desc: string;
+  tools: string;
+  img: string;
+  link: string;
+  github: string;
+}
+
+export const projectData: ProjectData[] = [
+  {
+    id: 1,
+    title: "Weather App",
+    desc: "This Project shows the weather condition of a searched location and the forecast of the next five days.... it visualize the location's windspeed, humidity, pressure and temperature graph.",
+    tools: "HTML, CSS, ReactJS, Vite and Tailwind-CSS",
+    img: "./images/snip.png",
+    // gif: "",
+    link: "https://weather-app-pi-rosy.vercel.app/",
+    github: "https://github.com/PrimeFord/WeatherApp",
+  },
+  {
+    id: 2,
+    title: "URL Shortner",
+    desc: "This site truncates a website into its short version, while still lading the same webpage. it has full mobile responsiveness",
+    tools: "HTML, CSS, ReactJS, Vite amd Tailwind-CSS",
+    img: "./images/snip.png",
+    // gif: "",
+    link: "https://url-shortener-primeford.vercel.app/",
+    github: "https://github.com/PrimeFord/URL_shortener",
+  },
+  {
+    id: 3,
+    title: "Share Web-router",
+    desc: "This project is a clone of Share website. it is fully responsive on a mobile phone",
+    tools: "HTML, CSS, ReactJS, React-router, Vite and Tailwind-CSS",
+    img: "./images/snip.png",
+    // gif: "",
+    link: "https://hilarious-daffodil-d9f7b0.netlify.app/",
+    github: "https://github.com/PrimeFord/Share_WebRouter",
+  },
+  {
+    id: 4,
+    title: "Code-Village Website",
+    desc: "This project is a clone of code village official website. it is fully responsive on a mobile phone",
+    tools: "HTML, CSS, ReactJS, Vite and Tailwind-CSS",
+    img: "./images/snip.png",
+    // gif: "",
+    link: "https://beautiful-heliotrope-b80911.netlify.app/",
+    github: "https://github.com/PrimeFord/Code_Village-Website-Clone",
+  },
+  {
+    id: 5,
+    title: "Landing Page",
+    desc: "This project is a landing page design from figma using react app with full mobile responsiveness",
+    tools: "HTML, CSS, ReactJS, myreact-app and Tailwind-CSS",
+    img: "./images/snip.png",
+    // gif: "",
+    link: "https://sparkling-tartufo-5e204b.netlify.app/",
+    github: "https://github.com/PrimeFord/Figma_Landing_Page_1",
+  },
+  {
+    id: 6,
+    title: "Redux Todo List",
+    desc: "This todo list project was developed using react-redux.... it possses add, toggle and remove reducer to make it effective. it comes with full mobile responsiveness.",
+    tools: "HTML, CSS, ReactJS, Redux, Vite and Tailwind-CSS",
+    img: "./images/snip.png",
+    // gif: "",
+    link: "https://redux-todo-list-amber.vercel.app/",
+    github: "https://github.com/PrimeFord/Redux-Todo_List",
+  },
 ];

@@ -19,11 +19,18 @@ const HomeCard = () => {
           >
             View Resume
           </button>
-          <p className="px-2">
-            <a href="#">
-              Download CV <img src="" alt="download" />
-            </a>
-          </p>
+          <a href="#">
+            <p className="px-2 flex items-center">
+              Download CV{" "}
+              <span>
+                <img
+                  src="/images/download.svg"
+                  alt="download"
+                  className=" w-[1.25rem]"
+                />
+              </span>
+            </p>
+          </a>
         </div>
         <OfficeDesk />
       </div>

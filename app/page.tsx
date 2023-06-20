@@ -2,6 +2,9 @@ import NavBar from "./components/NavBar";
 import HomeCard from "./components/HomeCard";
 import AboutCard from "./components/AboutCard";
 import SkillCard from "./components/SkillCard";
+import ProjectCard from "./components/ProjectCard";
+import ContactCard from "./components/ContactCard";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +15,9 @@ export default function Home() {
       <HomeCard />
       <AboutCard />
       <SkillCard />
+      <ProjectCard />
+      <ContactCard />
+      <Footer />
     </div>
   );
 }
