@@ -1,6 +1,7 @@
 import NavBar from "./components/NavBar";
 import HomeCard from "./components/HomeCard";
 import AboutCard from "./components/AboutCard";
+import SkillCard from "./components/SkillCard";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <NavBar />
       <HomeCard />
       <AboutCard />
+      <SkillCard />
     </div>
   );
 }
