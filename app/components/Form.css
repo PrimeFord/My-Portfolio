@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: auto auto;
   font-weight: 500;
+  font-size: 1rem;
 }
 section {
   display: flex;
@@ -16,6 +17,7 @@ label {
   margin-bottom: 0.5rem;
 }
 input {
+  font-size: 0.9rem;
   padding: 0.5rem;
   background-color: #dfdfdf;
   border: none;
@@ -24,6 +26,7 @@ input {
   margin-bottom: 0.5rem;
 }
 textarea {
+  font-size: 0.9rem;
   padding: 0.75rem;
   background-color: #dfdfdf;
   border: none;

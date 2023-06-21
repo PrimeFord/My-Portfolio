@@ -6,7 +6,7 @@ const OfficeDesk = () => {
       <p>
         <a href="https://linkedin.com/in/muhammedfuad-bashar" target="_blank">
           <img
-            className="w-[2rem] height-[2rem]"
+            className="w-[1.5rem] height-[1.5rem]"
             src="./images/linkedin.svg"
             alt="LinkedIn"
           />
@@ -15,8 +15,8 @@ const OfficeDesk = () => {
       <p>
         <a href="https://github.com/PrimeFord" target="_blank">
           <img
-            className="w-[2rem] height-[2rem]"
-            src="./images/github-fill.svg"
+            className="w-[1.5rem] height-[1.5rem]"
+            src="./images/github.svg"
             alt="Github"
           />
         </a>
@@ -24,8 +24,8 @@ const OfficeDesk = () => {
       <p>
         <a href="https://twitter.com/BMuhammedfuad" target="_blank">
           <img
-            className="w-[2rem] height-[2rem]"
-            src="./images/twitter-fill.svg"
+            className="w-[1.5rem] height-[1.5rem]"
+            src="./images/twitter.svg"
             alt="Twitter"
           />
         </a>
@@ -33,8 +33,8 @@ const OfficeDesk = () => {
       <p>
         <a href="https://mailto:wolabash@gmail.com" target="_blank">
           <img
-            className="w-[2rem] height-[2rem]"
-            src="./images/mail-fill.svg"
+            className="w-[1.5rem] height-[1.5rem]"
+            src="./images/mail.svg"
             alt="Email"
           />
         </a>

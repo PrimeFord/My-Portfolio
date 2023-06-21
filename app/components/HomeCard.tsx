@@ -16,7 +16,7 @@ const HomeCard = () => {
           Software Engineer / Front-End Developer
         </p>
         <div className="mb-[8rem] flex items-center gap-4">
-          <button className="w-fit rounded-md bg-[#263138] text-[#FBFBFB] py-2 px-4 drop-shadow-xl hover:scale-[1.15] hover:transition hover:ease-in-out hover:duration-700">
+          <button className="w-fit rounded-md bg-[#263138] text-[#FBFBFB] py-2 px-4 drop-shadow-xl transition duration-700 ease-in-out hover:scale-[1.15] hover:transition hover:ease-in-out hover:duration-700">
             View Resume
           </button>
           <a href="#">

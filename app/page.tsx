@@ -5,10 +5,11 @@ import SkillCard from "./components/SkillCard";
 import ProjectCard from "./components/ProjectCard";
 import ContactCard from "./components/ContactCard";
 import Footer from "./components/Footer";
+import Top from "./components/Top";
 
 export default function Home() {
   return (
-    <div className="w-[100%] h-fit bg-[#FBFBFB]">
+    <div className="w-[100%] h-fit bg-[#FBFBFB] relative">
       <NavBar />
       <HomeCard />
       <AboutCard />
@@ -16,6 +17,7 @@ export default function Home() {
       <ProjectCard />
       <ContactCard />
       <Footer />
+      <Top />
     </div>
   );
 }

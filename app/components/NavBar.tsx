@@ -16,7 +16,7 @@ const NavBar = () => {
   const navPos = () => {
     let currenSc = scrollY;
     // prev > currenSc ? setVisible(false) : setVisible(true);
-    if (prev > currenSc) {
+    if (prev > currenSc || currenSc === 0) {
       console.log("show");
       setVisible(true);
     }
@@ -30,19 +30,17 @@ const NavBar = () => {
     window.addEventListener("scroll", navBg);
     // console.log(window.scrollY);
     window.addEventListener("scroll", navPos);
+    setVisible(true);
   }, []);
   const logo = "Prime.";
   return (
     <nav
-      className={`w-full h-[5rem] fixed flex items-center justify-around z-30 transition ease-in-out duration-700 shadow-xl ${
-        navbar
-          ? "bg-[#263138] text-[#FBFBFB] transition duration-700 ease-in-out"
-          : "bg-transparent text-[#263138] transition duration-700 ease-in-out"
-      }${
-        visible
-          ? ""
-          : "absolute top-[-5rem] transition-all duration-1000 ease-in-out"
-      }`}
+      className={`w-full h-[5rem] fixed flex items-center justify-around z-30 transition ease-in-out duration-700 shadow-xl bg-opacity-80 top-0 backdrop-blur-[5px]
+    } ${
+      navbar
+        ? "bg-[#263138] text-[#FBFBFB] transition duration-700"
+        : "bg-[#FBFBFB] text-[#263138] transition duration-700"
+    }${visible ? "" : "transition-all duration-1000 translate-y-[-5rem]"}`}
     >
       <div className="w-[40%] flex-grow-1">
         <a href="#home">
