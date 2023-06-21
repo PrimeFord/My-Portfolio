@@ -1,3 +1,4 @@
+import { link } from "fs";
 import { title } from "process";
 
 interface NavData {
@@ -187,5 +188,56 @@ export const projectData: ProjectData[] = [
     // gif: "",
     link: "https://redux-todo-list-amber.vercel.app/",
     github: "https://github.com/PrimeFord/Redux-Todo_List",
+  },
+];
+
+interface SocialData {
+  name: string;
+  link: string;
+}
+
+export const socialData: SocialData[] = [
+  {
+    name: "LinkedIn",
+    link: "https://linkedin.com/in/muhammedfuad-bashar",
+  },
+  {
+    name: "Twitter",
+    link: "https://twitter.com/BMuhammedfuad",
+  },
+  {
+    name: "Github",
+    link: "https://github.com/PrimeFord",
+  },
+  {
+    name: "CodePen",
+    link: "https://codepen.io/PrimeFord",
+  },
+  {
+    name: "Telegram",
+    link: "https://t.me/bjford",
+  },
+  {
+    name: "Email",
+    link: "https://mailto:wolabash@gmail.com",
+  },
+];
+
+export const platformData: SocialData[] = [
+  {
+    name: "Vercel",
+    link: "https://vercel.com/primeford",
+  },
+  {
+    name: "Netlify",
+    link: "https://app.netlify.com/teams/primeford/overview",
+  },
+  {
+    name: "Codementor",
+    link: "https://www.codementor.io/projects",
+  },
+  {
+    name: "Notion",
+    link: "https://www.notion.so",
   },
 ];

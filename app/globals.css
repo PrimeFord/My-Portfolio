@@ -3,4 +3,23 @@
 @tailwind utilities;
 html {
   scroll-behavior: smooth;
+  color: #263138;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background: #fbfbfb;
+  border-radius: 20px;
+}
+
+/* ::-webkit-scrollbar-track {
+    background: tomato;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+  } */
+
+::-webkit-scrollbar-thumb {
+  background: #263138;
+  border-left: 1px solid #263138;
+  border-right: 1px solid #263138;
+  border-radius: 20px;
 }

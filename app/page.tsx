@@ -8,9 +8,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="w-[100%] h-fit bg-[#D7D7D7]">
-      {" "}
-      {/* //#DFDFDF */}
+    <div className="w-[100%] h-fit bg-[#FBFBFB]">
       <NavBar />
       <HomeCard />
       <AboutCard />
