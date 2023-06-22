@@ -24,7 +24,7 @@ const Top = () => {
   return (
     <div
       className={`fixed bottom-[4rem] right-[1.5rem] transition-all duration-1000 ${
-        visible ? "" : "bottom-[-6rem]"
+        visible ? "" : "bottom-[-5rem]"
       }`}
     >
       <a href="#home">
