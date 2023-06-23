@@ -50,15 +50,9 @@ const Form = () => {
           placeholder="message..."
         ></textarea>
       </section>
-      <section className="submit">
+      <section className="submit dark:bg-[#FBFBFB] dark:text-[#263138] dark:hover:bg-[#263138] dark:hover:border-2 dark:hover:border-solid dark:hover:border-[#FBFBFB] dark:hover:text-[#FBFBFB]">
         <button type="submit" className="flex items-center gap-4">
-          Submit{" "}
-          <img className="h-5 w-5" src="./images/send-1.svg" alt="send" />
-          {/* <img
-            className="h-5 w-5 hidden hover:block"
-            src="./images/send-2.svg"
-            alt="send"
-          /> */}
+          Submit
         </button>
       </section>
     </div>

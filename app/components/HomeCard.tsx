@@ -4,7 +4,7 @@ import OfficeDesk from "./OfficeDesk";
 const HomeCard = () => {
   return (
     <div
-      className="h-[100vh] w-[100%] pt-[10rem] px-[8rem] flex shadow-lg"
+      className="h-[100vh] w-[100%] pt-[10rem] px-[8rem] dark:text-[#FBFBFB] flex shadow-lg"
       id="home"
     >
       <div className="h-[100%] w-[60%] flex flex-col">
@@ -15,8 +15,8 @@ const HomeCard = () => {
         <p className="text-[1.8rem] font-[500] mb-10">
           Software Engineer / Front-End Developer
         </p>
-        <div className="mb-[8rem] flex items-center gap-4">
-          <button className="w-fit rounded-md bg-[#263138] text-[#FBFBFB] py-2 px-4 drop-shadow-xl transition duration-700 ease-in-out hover:scale-[1.15] hover:transition hover:ease-in-out hover:duration-700">
+        <div className="mb-[6rem] flex items-center gap-4">
+          <button className="w-fit rounded-md bg-[#263138] text-[#FBFBFB] dark:bg-[#FBFBFB] dark:text-[#263138] py-2 px-4 drop-shadow-xl transition duration-700 ease-in-out hover:scale-[1.15] hover:transition hover:ease-in-out hover:duration-700">
             View Resume
           </button>
           <a href="#">

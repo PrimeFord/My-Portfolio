@@ -53,6 +53,12 @@ textarea {
   color: #263138;
   border: 2px solid #263138;
 }
+/* [data-theme="dark"] .submit:hover {
+  background-color: #263138;
+  color: #fbfbfb;
+  border: 2px solid #fbfbfb;
+} */
+
 .submit {
   grid-column: 1/3;
 }

@@ -35,11 +35,11 @@ const NavBar = () => {
   const logo = "Prime.";
   return (
     <nav
-      className={`w-full h-[5rem] fixed flex items-center justify-around z-30 transition ease-in-out duration-700 shadow-xl bg-opacity-80 top-0 backdrop-blur-[5px]
+      className={`w-full h-[5rem] fixed flex items-center justify-around z-30 transition ease-in-out duration-700 shadow-xl bg-opacity-80 dark:bg-opacity-80 top-0 backdrop-blur-[5px]
     } ${
       navbar
-        ? "bg-[#263138] text-[#FBFBFB] transition duration-700"
-        : "bg-[#FBFBFB] text-[#263138] transition duration-700"
+        ? "bg-[#263138] text-[#FBFBFB] transition duration-700 dark:bg-[#FBFBFB] dark:text-[#263138]"
+        : "bg-[#FBFBFB] text-[#263138] transition duration-700 dark:bg-[#263138] dark:text-[#FBFBFB]"
     }${visible ? "" : "transition-all duration-1000 translate-y-[-5rem]"}`}
     >
       <div className="w-[40%] flex-grow-1">
@@ -53,6 +53,11 @@ const NavBar = () => {
             <a href={e.route}>{e.name}</a>
           </div>
         ))}
+      </div>
+      <div className="">
+        <button className="w-fit rounded-md bg-[#263138] dark:bg-[#FBFBFB] dark:text-[#263138] text-[#FBFBFB] py-2 px-4 drop-shadow-xl transition duration-700 ease-in-out hover:scale-[1.15] text-right hover:transition hover:ease-in-out hover:duration-700">
+          Hire Me
+        </button>
       </div>
     </nav>
   );

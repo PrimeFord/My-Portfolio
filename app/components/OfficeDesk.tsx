@@ -31,7 +31,7 @@ const OfficeDesk = () => {
         </a>
       </p>
       <p>
-        <a href="https://mailto:wolabash@gmail.com" target="_blank">
+        <a href="mailto:wolabash@gmail.com" target="_blank">
           <img
             className="w-[1.5rem] height-[1.5rem]"
             src="./images/mail.svg"

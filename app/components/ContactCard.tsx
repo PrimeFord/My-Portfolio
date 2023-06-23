@@ -9,7 +9,10 @@ import Phone from "./Reach/Phone";
 
 const ContactCard = () => {
   return (
-    <div className="h-fit w-[100%] py-[5rem] px-[8rem] flex flex-col gap-12 shadow-lg ">
+    <div
+      className="h-fit w-[100%] py-[5rem] px-[8rem] flex flex-col gap-12 shadow-lg dark:text-[#FBFBFB]"
+      id="contact"
+    >
       <div className="w-[100%] flex gap-4">
         <div className="w-[40%]">
           <h2 className="text-[2.5rem] leading-[3.5rem] font-[700] mb-5">

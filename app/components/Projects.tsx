@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { projectData } from "../utility/data";
-import "./Project.css";
+import "./Projects.css";
 
 const Projects = () => {
   const [fullString, setFullString] = useState(false);

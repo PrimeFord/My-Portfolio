@@ -4,7 +4,7 @@ import Projects from "./Projects";
 const ProjectCard = () => {
   return (
     <div
-      className="h-fit w-[100%] py-[5rem] px-[8rem] flex flex-col items-center shadow-lg"
+      className="h-fit w-[100%] py-[5rem] px-[8rem] flex flex-col items-center shadow-lg dark:text-[#FBFBFB]"
       id="projects"
     >
       <h2 className="text-[3.5rem] leading-[3.5rem] font-[700] mb-5">

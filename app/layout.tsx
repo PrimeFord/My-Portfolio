@@ -1,3 +1,4 @@
+import Provider from "./Provider";
 import "./globals.css";
 import { Raleway } from "next/font/google";
 
@@ -14,8 +15,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    // <ThemeProvider enableSystem={true} attribute="class">
+
+    // </ThemeProvider>
     <html lang="en">
-      <body className={raleway.className}>{children}</body>
+      <body className={raleway.className}>
+        <Provider>{children}</Provider>
+      </body>
     </html>
   );
 }

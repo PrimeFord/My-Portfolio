@@ -23,15 +23,15 @@ const Top = () => {
   }, []);
   return (
     <div
-      className={`fixed bottom-[4rem] right-[1.5rem] transition-all duration-1000 ${
-        visible ? "" : "bottom-[-4rem]"
+      className={`fixed drop-shadow-lg bottom-[4rem] right-[1.5rem] transition-all duration-1000 ease-in-out ${
+        visible ? "" : "transform translate-y-40 "
       }`}
     >
-      <a href="#home">
-        <p className="w-fit rounded-[50%] border-2 border-solid border-[#263138] shadow-xl">
+      <a href="#top">
+        <p className="w-[2.5rem] h-[2.5rem] flex justify-center items-center rounded-lg bg-[#263138] bg-opacity-[0.85] shadow-xl">
           <img
             className="h-[1.75rem] w-[1.75rem]"
-            src="./images/arrow (2).svg"
+            src="./images/top.svg"
             alt="arrow-up"
           />
         </p>
