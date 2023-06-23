@@ -9,16 +9,17 @@ import ProjectCard from "./components/ProjectCard";
 import ContactCard from "./components/ContactCard";
 import Footer from "./components/Footer";
 import Top from "./components/Top";
-import ThemeSwitcher from "./components/ThemeSwitcher";
 
 export default function Home() {
   // const { theme, setTheme } = useTheme();
   // const currentTheme = theme === "system" ? systemTheme : theme;
   return (
-    <div className="w-[100%] h-fit bg-[#FBFBFB] dark:bg-[#263138] relative" id="top">
+    <div
+      className="w-[100%] h-fit bg-[#FBFBFB] dark:bg-[#263138] relative"
+      id="top"
+    >
       <NavBar />
       <HomeCard />
-      <ThemeSwitcher />
       <AboutCard />
       <SkillCard />
       <ProjectCard />

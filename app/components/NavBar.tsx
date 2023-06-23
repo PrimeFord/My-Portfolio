@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { navData } from "../utility/data";
+import ThemeSwitcher from "./ThemeSwitcher";
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
   const [visible, setVisible] = useState(false);
@@ -54,6 +55,7 @@ const NavBar = () => {
           </div>
         ))}
       </div>
+      <ThemeSwitcher />
       <div className="">
         <button className="w-fit rounded-md bg-[#263138] dark:bg-[#FBFBFB] dark:text-[#263138] text-[#FBFBFB] py-2 px-4 drop-shadow-xl transition duration-700 ease-in-out hover:scale-[1.15] text-right hover:transition hover:ease-in-out hover:duration-700">
           Hire Me
