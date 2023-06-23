@@ -6,10 +6,15 @@ html {
   scroll-behavior: smooth;
   color: #263138;
 }
-
 ::-webkit-scrollbar {
   width: 12px;
   background: #fbfbfb;
+  border-radius: 20px;
+}
+
+[class="dark"] ::-webkit-scrollbar {
+  width: 12px;
+  background: #263138;
   border-radius: 20px;
 }
 
@@ -23,5 +28,12 @@ html {
   background: #263138;
   border-left: 1px solid #263138;
   border-right: 1px solid #263138;
+  border-radius: 20px;
+}
+
+[class="dark"] ::-webkit-scrollbar-thumb {
+  background: #fbfbfb;
+  border-left: 1px solid #fbfbfb;
+  border-right: 1px solid #fbfbfb;
   border-radius: 20px;
 }

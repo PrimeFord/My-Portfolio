@@ -3,7 +3,7 @@ import OfficeDesk from "./OfficeDesk";
 
 const Footer = () => {
   return (
-    <div className="w-[100%] px-[2rem] py-[0.75rem] text-center flex justify-between items-center shadow-inner">
+    <div className="w-[100%] px-[2rem] py-[0.75rem] text-center flex justify-between items-center shadow-inner dark:text-[#FBFBFB]">
       <p className="">
         <OfficeDesk />
       </p>

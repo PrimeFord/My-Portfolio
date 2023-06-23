@@ -38,7 +38,7 @@ const NavBar = () => {
       className={`w-full h-[5rem] fixed flex items-center justify-around z-30 transition ease-in-out duration-700 shadow-xl bg-opacity-80 dark:bg-opacity-80 top-0 backdrop-blur-[5px]
     } ${
       navbar
-        ? "bg-[#263138] text-[#FBFBFB] transition duration-700 dark:bg-[#FBFBFB] dark:text-[#263138]"
+        ? "bg-[#263138] text-[#FBFBFB] transition duration-700" // dark:bg-[#FBFBFB] dark:text-[#263138]
         : "bg-[#FBFBFB] text-[#263138] transition duration-700 dark:bg-[#263138] dark:text-[#FBFBFB]"
     }${visible ? "" : "transition-all duration-1000 translate-y-[-5rem]"}`}
     >
