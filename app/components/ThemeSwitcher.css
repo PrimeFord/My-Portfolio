@@ -1,4 +1,4 @@
-label {
+.labl {
   width: 4rem;
   height: 2rem;
   position: relative;
@@ -10,7 +10,7 @@ label {
   cursor: pointer;
   transition: 0.3s;
 }
-label:after {
+.labl:after {
   content: "";
   width: 1.8rem;
   height: 1.8rem;
@@ -22,38 +22,38 @@ label:after {
   box-shadow: 0rem 0.05rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
-input {
+#darkmode_toggle {
   width: 0;
   height: 0;
   /* visibility: hidden; */
   display: hidden;
 }
-input:checked + label {
+#darkmode_toggle:checked + .labl {
   background: #242424;
 }
-input:checked + label:after {
+#darkmode_toggle:checked + .labl:after {
   left: 3.9rem;
   transform: translateX(-100%);
   background: linear-gradient(180deg, #777, #3a3a3a);
 }
-label,
-label:after {
+.labl,
+.labl:after {
   transition: 0.3s;
 }
-label:active:after {
+.labl:active:after {
   width: 2.1rem;
 }
-label img {
+.labl img {
   position: absolute;
   width: 1.2rem;
   z-index: 100;
   top: 0.4rem;
 }
-label img.sun {
+.labl img.sun {
   left: 0.4rem;
   transition: 0.3s;
 }
-label img.moon {
+.labl img.moon {
   right: 0.4rem;
   transition: 0.3s;
 }

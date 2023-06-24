@@ -1,5 +1,6 @@
 import React from "react";
 import OfficeDesk from "./OfficeDesk";
+import Image from "next/image";
 
 const HomeCard = () => {
   return (
@@ -23,10 +24,11 @@ const HomeCard = () => {
             <p className="px-2 flex items-center transition duration-700 ease-in-out hover:scale-[1.15] hover:transition hover:ease-in-out hover:duration-700">
               Download CV{" "}
               <span className="animate-bounce">
-                <img
+                <Image
                   src="/images/download.svg"
                   alt="download"
-                  className=" w-[1.25rem]"
+                  width={24}
+                  height={24}
                 />
               </span>
             </p>

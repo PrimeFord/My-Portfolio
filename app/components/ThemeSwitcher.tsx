@@ -3,6 +3,7 @@ import React from "react";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import "./ThemeSwitcher.css";
+import Image from "next/image";
 
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
@@ -29,9 +30,21 @@ const ThemeSwitcher = () => {
   return (
     <div className="h-[2.5rem] pt-2 text-center relative flex items-center justify-center dark:text-[#FBFBFB]">
       <input type="checkbox" id="darkmode_toggle" onClick={setThem} />
-      <label htmlFor="darkmode_toggle" className="">
-        <img className="sun" src="./images/sun.svg" alt="sun" />
-        <img className="moon" src="./images/moon.svg" alt="moon" />
+      <label htmlFor="darkmode_toggle" className="labl">
+        <Image
+          className="sun"
+          src="./images/sun.svg"
+          alt="sun"
+          height={19.2}
+          width={19.2}
+        />
+        <Image
+          className="moon"
+          src="./images/moon.svg"
+          alt="moon"
+          height={19.2}
+          width={19.2}
+        />
       </label>
     </div>
   );

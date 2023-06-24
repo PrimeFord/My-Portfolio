@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const Top = () => {
@@ -29,10 +30,12 @@ const Top = () => {
     >
       <a href="#top">
         <p className="w-[2.5rem] h-[2.5rem] flex justify-center items-center rounded-lg bg-[#263138] dark:bg-[#FBFBFB] bg-opacity-[0.85] shadow-xl">
-          <img
+          <Image
             className="h-[1.75rem] w-[1.75rem]"
             src="./images/top.svg"
             alt="arrow-up"
+            height={28}
+            width={28}
           />
         </p>
       </a>

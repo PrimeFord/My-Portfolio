@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Phone = () => {
@@ -7,24 +8,48 @@ const Phone = () => {
       <div className="flex flex-col gap-2 justify-center items-center">
         <p className="flex gap-2 items-center hover:text-[1.15rem]">
           <a href="wa.me/+2348166619654" className="flex">
-            <img className="h-6 w-6" src="./images/whatsapp.svg" alt="" />
+            <Image
+              className="h-6 w-6"
+              src="./images/whatsapp.svg"
+              alt="whatsapp"
+              height={24}
+              width={24}
+            />
             <span>WhatsApp</span>
           </a>
         </p>
         <p className="flex gap-2 items-center hover:text-[1.15rem]">
           <a href="tel:+2348166619654" className="flex">
-            <img className="h-6 w-6" src="./images/phone.svg" alt="" />
+            <Image
+              className="h-6 w-6"
+              src="./images/phone.svg"
+              alt="phone"
+              height={24}
+              width={24}
+            />
             <span>+234 816 661 9654</span>
           </a>
         </p>
         <p className="flex gap-2 items-center hover:text-[1.15rem]">
           <a href="mailto:wolabash@gmail.com" className="flex">
-            <img className="h-6 w-6" src="./images/mail.svg" alt="" />
+            <Image
+              className="h-6 w-6"
+              src="./images/mail.svg"
+              alt="email"
+              height={24}
+              width={24}
+            />
             <span>wolabash@gmail.com</span>
           </a>
         </p>
         <p className="flex gap-2 items-center hover:text-[1.15rem]">
-          <img className="h-6 w-6" src="./images/map.svg" alt="" />
+          <Image
+            className="h-6 w-6"
+            src="./images/map.svg"
+            alt="map-pin"
+            height={24}
+            width={24}
+          />
           <span>Lagos, Nigeria.</span>
         </p>
       </div>

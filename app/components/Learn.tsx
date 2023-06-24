@@ -1,5 +1,6 @@
 import React from "react";
 import { learningData } from "../utility/data";
+import Image from "next/image";
 
 const Learn = () => {
   return (
@@ -8,13 +9,14 @@ const Learn = () => {
         <p className="text-[1.8rem] font-[500] mb-[2rem]">Learning:</p>
         <div className="flex flex-wrap gap-[1.5rem] px-[5rem] justify-start text-center items-center">
           {learningData.map((e, i) => (
-            <img
+            <Image
               src={e.src}
               alt={e.alt}
               title={e.title}
               key={e.title}
               // className="w-[7.5rem]"
-              width={"80px"}
+              width={80}
+              height={100}
             />
           ))}
         </div>

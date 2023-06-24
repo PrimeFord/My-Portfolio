@@ -1,5 +1,6 @@
 import React from "react";
 import { usingData } from "../utility/data";
+import Image from "next/image";
 
 const Using = () => {
   return (
@@ -7,14 +8,15 @@ const Using = () => {
       <p className="text-[1.8rem] font-[500] mb-[2rem]">Using now:</p>
       <div className="flex flex-wrap gap-[1rem] px-[2rem] justify-start text-center items-center">
         {usingData.map((e, i) => (
-          <img
+          <Image
             className="hover:drop-shadow-2xl "
             src={e.src}
             alt={e.alt}
             title={e.title}
             key={e.title}
             // className="w-[7.5rem]"
-            width={"100px"}
+            width={100}
+            height={100}
           />
         ))}
       </div>
