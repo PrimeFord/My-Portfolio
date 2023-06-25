@@ -5,7 +5,7 @@ import Image from "next/image";
 const HomeCard = () => {
   return (
     <div
-      className="h-fit lg:h-[100vh] w-[100%] pt-[10rem] px-[1rem] lg:px-[8rem] dark:text-[#FBFBFB] flex shadow-lg"
+      className="h-fit lg:h-[100vh] w-[100%] pt-[10rem] pb-8 lg:pb-0 px-[1rem] lg:px-[8rem] dark:text-[#FBFBFB] flex shadow-lg"
       id="home"
     >
       <div className="h-[100%] w-[100%] lg:w-[60%] pb-2 flex flex-col">

@@ -27,12 +27,12 @@ export default function Home() {
         <NavBar setShowModal={setShowModal} />
         <HomeCard />
         <AboutCard />
-        {/* <SkillCard />
+        <SkillCard />
         <ProjectCard />
         <ContactCard />
         <Footer />
         <Top />
-        <HireModal isVisible={showModal} onClose={() => setShowModal(false)} /> */}
+        <HireModal isVisible={showModal} onClose={() => setShowModal(false)} />
       </Fragment>
     </div>
   );

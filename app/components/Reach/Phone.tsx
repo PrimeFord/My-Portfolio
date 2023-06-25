@@ -3,10 +3,10 @@ import React from "react";
 
 const Phone = () => {
   return (
-    <div className="w-[13rem] font-[500] text-center">
+    <div className="w-[13rem] font-[500] text-left lg:text-center">
       <h2 className="text-[1.15rem] font-[700] mb-5">Contact Me</h2>
-      <div className="flex flex-col text-[0.9rem] gap-2 justify-center items-center">
-        <p className="flex gap-2 items-center hover:text-[1.15rem]">
+      <div className="flex flex-col text-[0.9rem] gap-2 justify-center items-start lg:items-center">
+        <p className="flex gap-2 items-start lg:items-center hover:text-[1.15rem]">
           <a href="wa.me/+2348166619654" className="flex">
             <Image
               className="h-6 w-6"

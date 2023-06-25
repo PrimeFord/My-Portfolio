@@ -3,7 +3,7 @@ import "./Form.css";
 
 const Form = () => {
   return (
-    <form className="forms">
+    <form className="w-[100%] forms flex flex-col lg:grid lg:grid-cols-2">
       <section>
         <label htmlFor="first_name">First name</label>
         <input

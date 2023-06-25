@@ -1,8 +1,6 @@
 .forms {
   column-gap: 1.5rem;
   row-gap: 0.5rem;
-  display: grid;
-  grid-template-columns: auto auto;
   font-weight: 500;
   font-size: 1rem;
 }

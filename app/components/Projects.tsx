@@ -7,15 +7,15 @@ import Image from "next/image";
 const Projects = () => {
   const [fullString, setFullString] = useState(false);
   const trauncateString = (string: string) => {
-    return `${string.substr(0, 90)}...`;
+    return `${string.substr(0, 85)}...`;
   };
 
   return (
-    <div className="grid grid-cols-3 gap-[2rem]">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-[2rem]">
       {projectData.map((e, i) => (
         <div
           key={i}
-          className="view" //border: 10px solid #fff margin: 10px;
+          className="view bg-[url('/images/snipp.png')]" //border: 10px solid #fff margin: 10px;
         >
           {/* <p> */}
           <Image
@@ -28,15 +28,17 @@ const Projects = () => {
           {/* </p> */}
           <div className="mask">
             <h2 className="">{e.title}</h2>
-            <p className="mb-2">{trauncateString(e.desc)}</p>
-            <h3 className="not-italic text-[0.9rem] mb-2">Tools: {e.tools}</h3>
+            <p className="mb-1 lg:mb-2">{trauncateString(e.desc)}</p>
+            <h3 className="not-italic text-[0.9rem] mb-2 lg:mb-2">
+              Tools: {e.tools}
+            </h3>
             <a href={e.link} target="_blank" className="underline">
               View Website
             </a>
             <a
               href={e.github}
               target="_blank"
-              className="absolute flex hover:underline bottom-2 left-2"
+              className="absolute flex hover:underline bottom-4 lg:bottom-2 left-2"
             >
               <Image
                 src="./images/github-f.svg"

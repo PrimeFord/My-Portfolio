@@ -3,11 +3,11 @@ import React from "react";
 const AboutCard = () => {
   return (
     <div
-      className="h-fit lg:h-[80vh] w-[100%] p-4 lg:px-[8rem] lg:py-[3rem] flex flex-col lg:flex-row justify-between shadow-lg dark:text-[#FBFBFB]"
+      className="h-fit lg:h-[80vh] w-[100%] py-[3rem] px-4 lg:px-[8rem] lg:py-[3rem] flex flex-col lg:flex-row justify-between shadow-lg dark:text-[#FBFBFB]"
       id="about"
     >
       <div className="w-[100%] lg:w-[40%] lg:h-[100%] flex flex-col  justify-center items-center pb-8 lg:pb-0">
-        <h2 className="block place-self-start lg:hidden mb-[2rem] text-[1.25rem] font-[600]">
+        <h2 className="block place-self-start lg:hidden mb-[2rem] text-[2rem] font-[600]">
           About me
         </h2>
 
