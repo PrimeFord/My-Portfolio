@@ -3,7 +3,7 @@ import "./Form.css";
 
 const Form = () => {
   return (
-    <div className="forms">
+    <form className="forms">
       <section>
         <label htmlFor="first_name">First name</label>
         <input
@@ -45,8 +45,7 @@ const Form = () => {
         <textarea
           name="message"
           id="message"
-          //   cols="10"
-          //   rows="5"
+          rows={3}
           placeholder="message..."
         ></textarea>
       </section>
@@ -55,7 +54,7 @@ const Form = () => {
           Submit
         </button>
       </section>
-    </div>
+    </form>
   );
 };
 

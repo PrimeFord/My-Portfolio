@@ -1,10 +1,15 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import "./Form.css";
 
 const HireModal = ({ isVisible, onClose }: any) => {
-  // const [subject,setSubject]
+  const [subject, setSubject] = useState("");
+  const [body, setBody] = useState("");
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const finalMessage = `Fullname: ${fullname}     Email: ${email}        Phone: ${phone}        Message: ${body}`;
 
   if (!isVisible) return null;
 
@@ -31,7 +36,11 @@ const HireModal = ({ isVisible, onClose }: any) => {
           <h2 className="text-[1.8rem] border-b-2 border-b-solid border-b-#263138 dark:border-b-#FBFBFB mb-4">
             Hire Me
           </h2>
-          <div className="forms p-2">
+          <form
+            className="forms p-2"
+            method="POST"
+            action={`mailto:wolabash@gmail.com?subject=${subject}&body=${finalMessage}`}
+          >
             <section>
               <label htmlFor="first_name">Full name</label>
               <input
@@ -39,16 +48,19 @@ const HireModal = ({ isVisible, onClose }: any) => {
                 name="fullname"
                 id="fullname"
                 placeholder="fullname"
+                value={fullname}
+                onChange={(e) => setFullname(e.target.value)}
               />
             </section>
             <section>
-              <label htmlFor="last_name">Subject</label>
+              <label htmlFor="subject">Subject</label>
               <input
                 type="text"
                 name="subject"
                 id="subject"
                 placeholder="subject"
-                // value={subject}
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
               />
             </section>
             <section>
@@ -58,6 +70,8 @@ const HireModal = ({ isVisible, onClose }: any) => {
                 name="email"
                 id="email"
                 placeholder="email@email.com..."
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </section>
             <section>
@@ -67,6 +81,8 @@ const HireModal = ({ isVisible, onClose }: any) => {
                 name="phone no"
                 id="phone_no"
                 placeholder="+234 81..."
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
               />
             </section>
             <section className="text">
@@ -74,9 +90,10 @@ const HireModal = ({ isVisible, onClose }: any) => {
               <textarea
                 name="message"
                 id="message"
-                //   cols="10"
-                //   rows="5"
+                rows={4}
                 placeholder="message..."
+                value={body}
+                onChange={(e) => setBody(e.target.value)}
               ></textarea>
             </section>
             <section className="submit dark:bg-[#FBFBFB] dark:text-[#263138] dark:hover:bg-[#263138] dark:hover:border-2 dark:hover:border-solid dark:hover:border-[#FBFBFB] dark:hover:text-[#FBFBFB]">
@@ -84,7 +101,7 @@ const HireModal = ({ isVisible, onClose }: any) => {
                 Submit
               </button>
             </section>
-          </div>
+          </form>
         </div>
       </div>
     </div>
