@@ -3,14 +3,20 @@ import React from "react";
 const AboutCard = () => {
   return (
     <div
-      className="h-[80vh] w-[100%] px-[8rem] py-[3rem] flex justify-between shadow-lg dark:text-[#FBFBFB]"
+      className="h-fit lg:h-[80vh] w-[100%] p-4 lg:px-[8rem] lg:py-[3rem] flex flex-col lg:flex-row justify-between shadow-lg dark:text-[#FBFBFB]"
       id="about"
     >
-      <div className="w-[40%] h-[100%] flex justify-center items-center">
-        <p className="w-[20rem] h-[20rem] rounded-[50%] bg-slate-600"></p>
+      <div className="w-[100%] lg:w-[40%] lg:h-[100%] flex flex-col  justify-center items-center pb-8 lg:pb-0">
+        <h2 className="block place-self-start lg:hidden mb-[2rem] text-[1.25rem] font-[600]">
+          About me
+        </h2>
+
+        <p className="w-[15rem] lg:w-[20rem] h-[15rem] lg:h-[20rem] rounded-[50%] bg-slate-600"></p>
       </div>
-      <div className="w-[60%] h-[100%] flex flex-col justify-center font-[500]">
-        <h2 className="mb-[2rem] text-[1.25rem] font-[600]">About me</h2>
+      <div className="w-[100%] mt lg:w-[60%] lg:h-[100%] flex flex-col justify-center font-[500]">
+        <h2 className="mb-[2rem] text-[1.25rem] font-[600] hidden lg:block">
+          About me
+        </h2>
         <p>- 👋 Hi, I am MuhammedFuad Bashar.</p>
         <p>
           - 👨🏾‍💻 I am a software developer. I write frontend mobile and web

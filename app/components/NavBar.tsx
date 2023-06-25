@@ -37,7 +37,7 @@ const NavBar = ({ setShowModal }: any) => {
   const logo = "Prime.";
   return (
     <nav
-      className={`w-full h-[5rem] fixed flex items-center p-8 lg:p-0 justify-between lg:justify-around z-30 transition ease-in-out duration-700 shadow-xl bg-opacity-80 dark:bg-opacity-80 top-0 backdrop-blur-[5px]
+      className={`w-full h-[5rem] fixed flex items-center p-4 lg:p-0 justify-between lg:justify-around z-30 transition ease-in-out duration-700 shadow-xl bg-opacity-80 dark:bg-opacity-80 top-0 backdrop-blur-[5px]
      ${
        navbar
          ? "bg-[#263138] text-[#FBFBFB] transition duration-700" // dark:bg-[#FBFBFB] dark:text-[#263138]
@@ -46,7 +46,7 @@ const NavBar = ({ setShowModal }: any) => {
     >
       <div className="w-[40%] flex-grow-1">
         <a href="#home">
-          <p className=" text-[3.2rem]">{logo}</p>
+          <p className=" text-[1.8rem] lg:text-[3.2rem]">{logo}</p>
         </a>
       </div>
       <div className="lg:flex  w-[40%] justify-between font-[500] hidden ">
