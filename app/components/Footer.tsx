@@ -7,7 +7,7 @@ const Footer = () => {
       <p className="">
         <OfficeDesk />
       </p>
-      <p className="">
+      <p className="text-[0.8rem] font-[200]">
         Copyright ©2023 Bashar Muhammedfuad. All Rights Reserved.
       </p>
     </div>
