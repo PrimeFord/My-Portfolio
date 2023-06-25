@@ -23,16 +23,19 @@ const HireModal = ({ isVisible, onClose }: any) => {
       onClick={handleClose}
     >
       <div className=" flex flex-col justify-center p-[2rem]">
-        <button className="w-fit place-self-end" onClick={() => onClose()}>
-          <Image
-            // className="place-self-end "
-            src="./images/close.svg"
-            alt="Close"
-            width={32}
-            height={32}
-          />
-        </button>
-        <div className="bg-[#FBFBFB] dark:bg-[#263138] dark:text-[#FBFBFB] p-[3rem] rounded-[1rem]">
+        <div className="bg-[#FBFBFB] dark:bg-[#263138] dark:text-[#FBFBFB] p-[3rem] rounded-[1rem] relative">
+          <button
+            className="w-fit absolute top-4 right-4"
+            onClick={() => onClose()}
+          >
+            <Image
+              className=""
+              src="./images/close.svg"
+              alt="Close"
+              width={32}
+              height={32}
+            />
+          </button>
           <h2 className="text-[1.8rem] border-b-2 border-b-solid border-b-#263138 dark:border-b-#FBFBFB mb-4">
             Hire Me
           </h2>
