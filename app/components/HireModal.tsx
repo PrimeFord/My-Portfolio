@@ -47,6 +47,7 @@ const HireModal = ({ isVisible, onClose }: any) => {
             <section>
               <label htmlFor="first_name">Full name</label>
               <input
+                className="dark:text-[#263138]"
                 type="text"
                 name="fullname"
                 id="fullname"
@@ -58,6 +59,7 @@ const HireModal = ({ isVisible, onClose }: any) => {
             <section>
               <label htmlFor="subject">Subject</label>
               <input
+                className="dark:text-[#263138]"
                 type="text"
                 name="subject"
                 id="subject"
@@ -69,6 +71,7 @@ const HireModal = ({ isVisible, onClose }: any) => {
             <section>
               <label htmlFor="email">Email</label>
               <input
+                className="dark:text-[#263138]"
                 type="email"
                 name="email"
                 id="email"
@@ -80,7 +83,8 @@ const HireModal = ({ isVisible, onClose }: any) => {
             <section>
               <label htmlFor="phone_no">Phone number</label>
               <input
-                type="number"
+                className="dark:text-[#263138]"
+                type="text"
                 name="phone no"
                 id="phone_no"
                 placeholder="+234 81..."
@@ -91,6 +95,7 @@ const HireModal = ({ isVisible, onClose }: any) => {
             <section className="text">
               <label htmlFor="message">Message</label>
               <textarea
+                className="dark:text-[#263138]"
                 name="message"
                 id="message"
                 rows={4}
