@@ -14,10 +14,8 @@ import HireModal from "./components/HireModal";
 import { Fragment, useState } from "react";
 
 export default function Home() {
-  // const { theme, setTheme } = useTheme();
   const [showModal, setShowModal] = useState(false);
 
-  // const currentTheme = theme === "system" ? systemTheme : theme;
   return (
     <div
       className="w-[100%] h-fit bg-[#FBFBFB] dark:bg-[#263138] relative"
