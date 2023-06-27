@@ -1,7 +1,5 @@
 "use client";
-// import Image from "next/image";
-// import { useState, useEffect } from "react";
-// import { useTheme } from "next-themes";
+
 import NavBar from "./components/NavBar";
 import HomeCard from "./components/HomeCard";
 import AboutCard from "./components/AboutCard";
