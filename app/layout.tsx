@@ -15,9 +15,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    // <ThemeProvider enableSystem={true} attribute="class">
-
-    // </ThemeProvider>
     <html lang="en">
       <body className={raleway.className}>
         <Provider>{children}</Provider>
