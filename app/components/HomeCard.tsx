@@ -19,7 +19,6 @@ const HomeCard = ({ setShowModal }: any) => {
         <p className="text-[1.5rem] lg:text-[1.8rem] font-[500] mb-8 lg:mb-10">
           Software Engineer / Front-End Developer
         </p>
-
         <div className="mb-[3rem] flex justify-start items-center gap-2">
           <button className="w-fit rounded-md bg-[#263138] text-[#FBFBFB] dark:bg-[#FBFBFB] dark:text-[#263138] py-2 px-4 drop-shadow-xl transition duration-700 ease-in-out hover:scale-[1.15] hover:transition hover:ease-in-out hover:duration-700">
             View Resume
