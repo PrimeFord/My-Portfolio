@@ -12,7 +12,7 @@ const Connect = () => {
       <h2 className="text-[1.15rem] font-[700] mb-5">Connect</h2>
       <div className="flex flex-col gap-2">
         {socialData.map((e, i) => (
-          <a key={e.name} href={e.link} target="_blank">
+          <a key={e.name} href={e.link} target="_blank" rel="noopener">
             <p className="text-[0.9rem] hover:text-[1.15rem]">{e.name}</p>
           </a>
         ))}
