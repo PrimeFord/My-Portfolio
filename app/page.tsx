@@ -21,7 +21,7 @@ export default function Home() {
     >
       <Fragment>
         <NavBar setShowModal={setShowModal} />
-        <HomeCard />
+        <HomeCard setShowModal={setShowModal} />
         <AboutCard />
         <SkillCard />
         <ProjectCard />

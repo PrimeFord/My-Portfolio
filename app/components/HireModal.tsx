@@ -40,7 +40,7 @@ const HireModal = ({ isVisible, onClose }: any) => {
             Hire Me
           </h2>
           <form
-            className="forms p-2"
+            className="forms p-2  lg:grid lg:grid-cols-2"
             method="POST"
             action={`mailto:wolabash@gmail.com?subject=${subject}&body=${finalMessage}`}
           >

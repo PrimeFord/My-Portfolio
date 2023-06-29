@@ -9,7 +9,7 @@ const Learn = () => {
         <p className="text-[1.25rem] lg:text-[1.8rem] font-[500] mb-[2rem]">
           Learning:
         </p>
-        <div className="flex flex-wrap gap-[1rem] px-[2rem] justify-center lg:justify-starttext-center items-center">
+        <div className="flex flex-wrap gap-[1rem] px-[2rem] justify-center lg:justify-start text-center items-center">
           {learningData.map((e, i) => (
             <Image
               src={e.src}
