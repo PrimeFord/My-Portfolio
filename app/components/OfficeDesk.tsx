@@ -5,11 +5,7 @@ const OfficeDesk = () => {
   return (
     <div className="flex gap-4">
       <p>
-        <a
-          href="https://linkedin.com/in/muhammedfuad-bashar"
-          target="_blank"
-          rel="noopener"
-        >
+        <a href="https://linkedin.com/in/muhammedfuad-bashar" rel="noopener">
           <Image
             className="w-[1.5rem] height-[1.5rem]"
             width={24}
@@ -20,7 +16,7 @@ const OfficeDesk = () => {
         </a>
       </p>
       <p>
-        <a href="https://github.com/PrimeFord" target="_blank" rel="noopener">
+        <a href="https://github.com/PrimeFord" rel="noopener">
           <Image
             className="w-[1.5rem] height-[1.5rem]"
             width={24}
@@ -31,11 +27,7 @@ const OfficeDesk = () => {
         </a>
       </p>
       <p>
-        <a
-          href="https://twitter.com/BMuhammedfuad"
-          target="_blank"
-          rel="noopener"
-        >
+        <a href="https://twitter.com/BMuhammedfuad" rel="noopener">
           <Image
             className="w-[1.5rem] height-[1.5rem]"
             src="./images/twitter.svg"
@@ -46,7 +38,7 @@ const OfficeDesk = () => {
         </a>
       </p>
       <p>
-        <a href="mailto:wolabash@gmail.com" target="_blank" rel="noopener">
+        <a href="mailto:wolabash@gmail.com" rel="noopener">
           <Image
             className="w-[1.5rem] height-[1.5rem]"
             src="./images/mail.svg"

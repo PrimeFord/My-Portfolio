@@ -32,17 +32,11 @@ const Projects = () => {
             <h3 className="not-italic text-[0.9rem] mb-2 lg:mb-2">
               Tools: {e.tools}
             </h3>
-            <a
-              href={e.link}
-              target="_blank"
-              rel="noopener"
-              className="underline"
-            >
+            <a href={e.link} rel="noopener" className="underline">
               View Website
             </a>
             <a
               href={e.github}
-              target="_blank"
               rel="noopener"
               className="absolute flex hover:underline bottom-4 lg:bottom-2 left-2"
             >
