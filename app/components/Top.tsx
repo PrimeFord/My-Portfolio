@@ -21,7 +21,7 @@ const Top = () => {
   useEffect(() => {
     window.addEventListener("scroll", navPos);
     // setVisible(true);
-  }, []);
+  });
   return (
     <div
       className={`fixed drop-shadow-lg bottom-[4rem] right-[1.5rem] transition-all duration-1000 ease-in-out ${

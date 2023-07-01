@@ -22,7 +22,7 @@ const ThemeSwitcher = () => {
   useEffect(() => {
     setTheme("light");
     setMounted(true);
-  }, []);
+  }, [setTheme]);
 
   if (!mounted) {
     return null;

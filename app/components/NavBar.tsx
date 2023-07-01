@@ -15,6 +15,19 @@ const NavBar = ({ setShowModal }: any) => {
       setNavbar(false);
     }
   };
+  // const navPos = useCallback(() => {
+  //   let currenSc = scrollY;
+  //   // prev > currenSc ? setVisible(false) : setVisible(true);
+  //   if (prev > currenSc || currenSc === 0) {
+  //     console.log("show");
+  //     setVisible(true);
+  //   }
+  //   if (prev < currenSc) {
+  //     console.log("hide");
+  //     setVisible(false);
+  //   }
+  //   prev = currenSc;
+  // },[setVisible]);
   const navPos = () => {
     let currenSc = scrollY;
     // prev > currenSc ? setVisible(false) : setVisible(true);
@@ -33,7 +46,7 @@ const NavBar = ({ setShowModal }: any) => {
     // console.log(window.scrollY);
     window.addEventListener("scroll", navPos);
     setVisible(true);
-  }, []);
+  });
   const logo = "Prime.";
   return (
     <nav
