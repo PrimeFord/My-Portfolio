@@ -9,11 +9,9 @@ const Top = () => {
   const navPos = () => {
     let currenSc = scrollY;
     if (prev < currenSc) {
-      console.log("show");
       setVisible(true);
     }
     if (prev > currenSc) {
-      console.log("hide");
       setVisible(false);
     }
     prev = currenSc;

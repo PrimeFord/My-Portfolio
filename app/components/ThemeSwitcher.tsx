@@ -48,7 +48,7 @@ const ThemeSwitcher = () => {
           />
         </label>
       </div>
-      <div className="mobile h-[2.5rem] text-center relative flex items-center justify-center dark:text-[#FBFBFB] lg:hidden">
+      <div className="mobile h-[2.5rem] pt-2 text-center relative flex items-center justify-center dark:text-[#FBFBFB] lg:hidden">
         <input type="checkbox" id="darkmode_toggle" onClick={setThem} />
         <label
           htmlFor="darkmode_toggle"
