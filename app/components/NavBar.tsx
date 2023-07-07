@@ -4,9 +4,9 @@ import React, { useEffect, useState } from "react";
 import { navData } from "../utility/data";
 import ThemeSwitcher from "./ThemeSwitcher";
 import HireMe from "./HireMe";
-const NavBar = ({ setShowModal }: any) => {
+const NavBar = ({ setShowModal, toggle, setToggle }: any) => {
   const [navbar, setNavbar] = useState(false);
-  const [toggle, setToggle] = useState(true);
+  // const [toggle, setToggle] = useState(true);
   const [visible, setVisible] = useState(false);
   let prev = window.scrollY;
   const navBg = () => {
@@ -31,7 +31,6 @@ const NavBar = ({ setShowModal }: any) => {
   // },[setVisible]);
   const navPos = () => {
     let currenSc = scrollY;
-    // prev > currenSc ? setVisible(false) : setVisible(true);
     if (prev > currenSc || currenSc === 0) {
       setVisible(true);
     }
@@ -48,7 +47,7 @@ const NavBar = ({ setShowModal }: any) => {
   const logo = "Prime.";
   return (
     <nav
-      className={`w-full h-[4rem] lg:h-[5rem] fixed flex items-center p-4 lg:p-0 justify-between lg:justify-around z-30 transition ease-in-out duration-700 shadow-xl bg-opacity-80 dark:bg-opacity-80 top-0 backdrop-blur-[5px]
+      className={`w-full h-[4rem] lg:h-[5rem] fixed flex items-center p-4 lg:p-0 justify-between lg:justify-around z-[30] transition ease-in-out duration-700 shadow-xl bg-opacity-80 dark:bg-opacity-80 top-0 backdrop-blur-[5px]
      ${
        navbar
          ? "bg-[#263138] text-[#FBFBFB] transition duration-700" // dark:bg-[#FBFBFB] dark:text-[#263138]
@@ -61,7 +60,6 @@ const NavBar = ({ setShowModal }: any) => {
         </a>
       </div>
       <div className="hidden lg:flex lg:h-fit lg:w-[40%] lg:justify-between lg:font-[500]">
-        {/* top-[-10rem] */}
         {navData.map((e, i) => (
           <div
             key={i}
@@ -72,43 +70,58 @@ const NavBar = ({ setShowModal }: any) => {
         ))}
       </div>
       <div
-        className={`nav w-[70%] fixed h-[110vh] top-[0rem] pt-[5rem] text-center text-[1.25rem] ease-in-out z-[55] text-[#FBFBFB] dark:text-[#263138] bg-[#263138] backdrop-blur-sm dark:bg-[#FBFBFB] bg-opacity-80 dark:bg-opacity-80 lg:hidden ${
+        className={`nav lg:hidden fixed w-[100%] top-[0rem] z-[30] h-[110vh] ${
           toggle
-            ? "right-[-70%] duration-500 ease-in-out"
-            : "transition-all duration-500 ease-in-out right-0"
-        } ${visible ? ` ease-in-out` : `translate-y-[4rem] ease-in-out`}`}
+            ? "right-[-100%] duration-700 ease-in-out"
+            : "transition-all duration-700 ease-in-out right-0 backdrop-blur-sm"
+        }`}
       >
-        {/* top-[-10rem] */}
-        {navData.map((e, i) => (
-          <div key={i} className="my-[2rem] hover:text-[#fbfbfbd0] ease-in-out">
-            <a href={e.route} onClick={() => setToggle(true)}>
-              {e.name}
-            </a>
-          </div>
-        ))}
+        <div
+          className={`nav w-[70%] fixed h-[110vh] top-[0rem] pt-[5rem] text-center text-[1.25rem] ease-in-out z-[55] text-[hsl(0,0%,98%)] dark:text-[#263138] bg-[#263138] backdrop-blur-lg dark:bg-[#FBFBFB] bg-opacity-80 dark:bg-opacity-80 lg:hidden ${
+            toggle
+              ? "right-[-70%] duration-700 ease-in-out"
+              : "transition-all duration-700 ease-in-out right-0"
+          } ${visible ? ` ease-in-out` : `translate-y-[4rem] ease-in-out`}`}
+        >
+          {navData.map((e, i) => (
+            <div
+              key={i}
+              className="my-[2rem] hover:text-[#fbfbfbd0] ease-in-out"
+            >
+              <a href={e.route} onClick={() => setToggle(true)}>
+                {e.name}
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
       <ThemeSwitcher />
       <div
         className="hamburger cursor-pointer z-[56] lg:hidden"
-        // onClick={() => hamburger?.classList.toggle("active")}
         onClick={() => setToggle(!toggle)}
       >
         <span
           className={`bar block w-[25px] h-[3px] my-[5px] transition-all duration-[0.3s] ease-in-out ${
             !toggle &&
             "transform translate-y-2 rotate-45 bg-[#FBFBFB] dark:bg-[#263138]"
-          } ${navbar ? "bg-[#FBFBFB]" : "bg-[#263138]"}`}
+          } ${navbar ? "bg-[#FBFBFB]" : "bg-[#263138]"} ${
+            toggle && "dark:bg-[#FBFBFB]"
+          }`}
         ></span>
         <span
           className={`bar block w-[25px] h-[3px] my-[5px] transition-all duration-[0.3s] ease-in-out ${
             !toggle && "opacity-0 bg-[#FBFBFB]"
-          }  ${navbar ? "bg-[#FBFBFB]" : "bg-[#263138]"}`}
+          }  ${navbar ? "bg-[#FBFBFB]" : "bg-[#263138]"} ${
+            toggle && "dark:bg-[#FBFBFB]"
+          }`}
         ></span>
         <span
           className={`bar block w-[25px] h-[3px] my-[5px] transition-all duration-[0.3s] ease-in-out  ${
             !toggle &&
             "transform -translate-y-[8px] -rotate-45 bg-[#FBFBFB] dark:bg-[#263138]"
-          } ${navbar ? "bg-[#FBFBFB]" : "bg-[#263138]"}`}
+          } ${navbar ? "bg-[#FBFBFB]" : "bg-[#263138]"} ${
+            toggle && "dark:bg-[#FBFBFB]"
+          }`}
         ></span>
       </div>
       <div className="hidden lg:block">

@@ -10,8 +10,10 @@ import Footer from "./components/Footer";
 import Top from "./components/Top";
 import HireModal from "./components/HireModal";
 import { Fragment, useState } from "react";
+import Backdrop from "./components/Backdrop";
 
 export default function Home() {
+  const [toggle, setToggle] = useState(true);
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -19,8 +21,13 @@ export default function Home() {
       className="w-[100%] h-fit bg-[#FBFBFB] dark:bg-[#263138] relative"
       id="top"
     >
+      <Backdrop toggle={toggle} />
       <Fragment>
-        <NavBar setShowModal={setShowModal} />
+        <NavBar
+          setShowModal={setShowModal}
+          toggle={toggle}
+          setToggle={setToggle}
+        />
         <HomeCard setShowModal={setShowModal} />
         <AboutCard />
         <SkillCard />

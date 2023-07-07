@@ -9,7 +9,10 @@ const HireModal = ({ isVisible, onClose }: any) => {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const finalMessage = `Fullname: ${fullname}     Email: ${email}        Phone: ${phone}        Message: ${body}`;
+  const finalMessage = `Fullname: ${fullname}${(<br />)}
+  Email: ${email}${(<br />)}
+  Phone: ${phone}${(<br />)}
+  Message: ${body}`;
 
   if (!isVisible) return null;
 
@@ -18,12 +21,12 @@ const HireModal = ({ isVisible, onClose }: any) => {
   };
   return (
     <div
-      className="w-[100vw] h-[100vh] fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm z-50 flex justify-center items-centers"
+      className="w-[100vw] h-[100vh] fixed overflow-scroll inset-0 bg-black bg-opacity-25 backdrop-blur-sm z-50 flex justify-center items-centers"
       id="wrapper"
       onClick={handleClose}
     >
-      <div className=" flex flex-col justify-center p-[2rem]">
-        <div className="bg-[#FBFBFB] dark:bg-[#263138] dark:text-[#FBFBFB] p-[3rem] rounded-[1rem] relative">
+      <div className=" flex flex-col justify-center py-8 lg:p-[2rem] h-fit w-[85%] lg:w-fit ">
+        <div className="bg-[#FBFBFB] dark:bg-[#263138] dark:text-[#FBFBFB] lg:p-[3rem] p-4 rounded-[1rem] relative">
           <button
             className="w-fit absolute top-4 right-4"
             onClick={() => onClose()}
@@ -36,7 +39,7 @@ const HireModal = ({ isVisible, onClose }: any) => {
               height={32}
             />
           </button>
-          <h2 className="text-[1.8rem] border-b-2 border-b-solid border-b-#263138 dark:border-b-#FBFBFB mb-4">
+          <h2 className="text-[1.3rem] lg:text-[1.8rem] border-b-2 border-b-solid border-b-#263138 dark:border-b-#FBFBFB mb-4">
             Hire Me
           </h2>
           <form
