@@ -8,14 +8,31 @@ const NavBar = ({ setShowModal, toggle, setToggle }: any) => {
   const [navbar, setNavbar] = useState(false);
   // const [toggle, setToggle] = useState(true);
   const [visible, setVisible] = useState(false);
-  let prev = window.scrollY;
-  const navBg = () => {
-    if (window.scrollY >= 85) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
+  if (typeof window === "object") {
+    let prev = window.scrollY;
+    const navBg = () => {
+      if (window.scrollY >= 85) {
+        setNavbar(true);
+      } else {
+        setNavbar(false);
+      }
+    };
+    const navPos = () => {
+      let currenSc = scrollY;
+      if (prev > currenSc || currenSc === 0) {
+        setVisible(true);
+      }
+      if (prev < currenSc) {
+        setVisible(false);
+      }
+      prev = currenSc;
+    };
+    useEffect(() => {
+      window.addEventListener("scroll", navBg);
+      window.addEventListener("scroll", navPos);
+      setVisible(true);
+    });
+  }
   // const navPos = useCallback(() => {
   //   let currenSc = scrollY;
   //   // prev > currenSc ? setVisible(false) : setVisible(true);
@@ -29,21 +46,7 @@ const NavBar = ({ setShowModal, toggle, setToggle }: any) => {
   //   }
   //   prev = currenSc;
   // },[setVisible]);
-  const navPos = () => {
-    let currenSc = scrollY;
-    if (prev > currenSc || currenSc === 0) {
-      setVisible(true);
-    }
-    if (prev < currenSc) {
-      setVisible(false);
-    }
-    prev = currenSc;
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", navBg);
-    window.addEventListener("scroll", navPos);
-    setVisible(true);
-  });
+
   const logo = "Prime.";
   return (
     <nav

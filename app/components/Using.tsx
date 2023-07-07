@@ -11,12 +11,11 @@ const Using = () => {
       <div className="flex flex-wrap gap-[1rem] px-[2rem] justify-center lg:justify-start text-center items-center">
         {usingData.map((e, i) => (
           <Image
-            className="hover:drop-shadow-2xl "
+            className="hover:drop-shadow-2xl"
             src={e.src}
             alt={e.alt}
             title={e.title}
             key={e.title}
-            // className="w-[7.5rem]"
             width={100}
             height={100}
           />

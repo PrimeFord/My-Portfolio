@@ -15,9 +15,8 @@ const Projects = () => {
       {projectData.map((e, i) => (
         <div
           key={i}
-          className="view bg-[url('/images/snipp.png')]" //border: 10px solid #fff margin: 10px;
+          className="view" //border: 10px solid #fff margin: 10px;
         >
-          {/* <p> */}
           <Image
             className="bac"
             src={e.img}
@@ -25,7 +24,6 @@ const Projects = () => {
             height={240}
             width={352}
           />
-          {/* </p> */}
           <div className="mask">
             <h2 className="">{e.title}</h2>
             <p className="mb-1 lg:mb-2">{trauncateString(e.desc)}</p>
