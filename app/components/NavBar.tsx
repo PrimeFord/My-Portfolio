@@ -8,7 +8,7 @@ const NavBar = ({ setShowModal, toggle, setToggle }: any) => {
   const [navbar, setNavbar] = useState(false);
   // const [toggle, setToggle] = useState(true);
   const [visible, setVisible] = useState(false);
-  if (typeof window === "object") {
+  if (typeof window !== "undefined") {
     let prev = window.scrollY;
     const navBg = () => {
       if (window.scrollY >= 85) {
