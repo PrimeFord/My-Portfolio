@@ -3,10 +3,8 @@
 import React, { useEffect, useState } from "react";
 import { navData } from "../utility/data";
 import ThemeSwitcher from "./ThemeSwitcher";
-import HireMe from "./HireMe";
 const NavBar = ({ setShowModal, toggle, setToggle }: any) => {
   const [navbar, setNavbar] = useState(false);
-  // const [toggle, setToggle] = useState(true);
   const [visible, setVisible] = useState(false);
   if (typeof window !== "undefined") {
     let prev = window.scrollY;
@@ -32,20 +30,9 @@ const NavBar = ({ setShowModal, toggle, setToggle }: any) => {
       window.addEventListener("scroll", navPos);
       setVisible(true);
     });
+  } else {
+    console.log("Dom Undefined");
   }
-  // const navPos = useCallback(() => {
-  //   let currenSc = scrollY;
-  //   // prev > currenSc ? setVisible(false) : setVisible(true);
-  //   if (prev > currenSc || currenSc === 0) {
-  //     console.log("show");
-  //     setVisible(true);
-  //   }
-  //   if (prev < currenSc) {
-  //     console.log("hide");
-  //     setVisible(false);
-  //   }
-  //   prev = currenSc;
-  // },[setVisible]);
 
   const logo = "Prime.";
   return (
